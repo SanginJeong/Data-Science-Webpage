@@ -47,7 +47,7 @@
     </ul>
 
     <ul class="nav_user">
-      <button id="login"><i class="fa-solid fa-right-to-bracket"></i></button>
+      <button id="openModal"><i class="fa-solid fa-right-to-bracket"></i></button>
     </ul>
       
     <a href="#" class="hamburger">
@@ -73,19 +73,19 @@
       <div class="main_right">
         <div class="sideBar">
           <div>
-            <a href="#">해양대<br/>홈페이지</a>
+            <a href="https://www.kmou.ac.kr/kmou/main.do" target="_blank">해양대<br/>홈페이지</a>
           </div>
           <hr/>
           <div>
-            <a href="#">종합정보<br/>시스템</a>
+            <a href="https://wtis.kmou.ac.kr/mi/install_setup/install.jsp" target="_blank">종합정보<br/>시스템</a>
           </div>
           <hr/>
           <div>
-            <a href="#">Ocean<br/>CTS</a>
+            <a href="https://cts.kmou.ac.kr/" target="_blank">Ocean<br/>CTS</a>
           </div>
           <hr/>
           <div>
-            <a href="#">KMOU<br/>LMS</a>
+            <a href="https://cyberweb.kmou.ac.kr/index.jsp" target="_blank">KMOU<br/>LMS</a>
           </div>
         </div>
       </div>
@@ -98,15 +98,14 @@
     <div>BackEnd : 박준서</div>
     <div>문의 : sanginjeong07@gmail.com</div>
   </footer>
-  
-  <div class="modal">
+
+  <div class="modal hidden">
     <div class="modal_overlay"></div>
     <div class="modal_content">
       <div class="modal_header">
       <div>로그인</div>
-      <button>X</button>
+      <button id="exit"><i class="fa-solid fa-xmark"></i></button>
       </div>
-      
       <div class="modal_image">
         <img src="https://www.kmou.ac.kr/images/web/kmou/sub/icon_login.png" alt="">
       </div>

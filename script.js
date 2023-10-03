@@ -1,8 +1,10 @@
 const $hamburger = document.querySelector('.hamburger');
 const $nav_menu = document.querySelector('.nav_menu');
 const $nav_user = document.querySelector('.nav_user');
-const $login = document.querySelector('#login');
+const $openModal = document.querySelector('#openModal');
+const $modal = document.querySelector('.modal');
 const $form = document.querySelector('#form');
+const $exit = document.querySelector('#exit');
 
 $form.addEventListener('submit',(event)=>{
     event.preventDefault();
@@ -12,6 +14,10 @@ $hamburger.addEventListener('click', () =>{
     $nav_user.classList.toggle('active');
 })
 
-$login.addEventListener('click', ()=>{
-    console.log('클릭');
+$openModal.addEventListener('click', ()=>{
+    $modal.classList.remove('hidden');
+})
+
+$exit.addEventListener('click', ()=>{
+    $modal.classList.add('hidden');
 })
