@@ -63,24 +63,10 @@
           <button id="delete_vote">삭제하기</button>
         </div>
         <h1>진행중인 투표</h1>
+
       </div>
       <div class="main_vote">
-        <div class="vote_subject item">
-          <h2>개강총회 참석여부</h2>
-          <div id="vote_text">
-            <h3 id="vote_title">3/2 개강총회 참석여부 조사</h3>
-            <h3 id="vote_location">장소 : </h3>
-          </div>
-          <div>
-            <p id="show_sum">투표인원 : 0</p>
-            <p id="show_participate">참여 : 0</p>
-            <p id="show_absent">불참 : 0</p>
-          </div>
-          <div>
-            <button id="participate">참여</button>
-            <button id="absent">불참</button>
-          </div>
-        </div>
+        <div>없음</div>
       </div>
     </div>
   </main>
@@ -114,7 +100,7 @@
     <div class="modal_content">
       <div class="modal_header">
       <div>로그인</div>
-      <button id="exit"><i class="fa-solid fa-xmark"></i></button>
+      <button class="exit"><i class="fa-solid fa-xmark"></i></button>
       </div>
       <div class="modal_image">
         <img src="https://www.kmou.ac.kr/images/web/kmou/sub/icon_login.png" alt="">
@@ -125,6 +111,25 @@
         <div>비밀번호</div>
         <p><input type="password"/></p>
         <button>로그인</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal_vote hidden">
+    <div class="modal_overlay"></div>
+    <div class="modal_content">
+      <div class="modal_header">
+      <div>투표 올리기</div>
+      <button class="exit"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form id="form">
+        <div>제목</div>
+        <p><input type="text" id="input_vote_title"/></p>
+        <div>내용</div>
+        <p><input type="text" id="input_vote_content"/></p>
+        <div>장소</div>
+        <p><input type="text" id="input_vote_location"/></p>
+        <button id="complete">완료</button>
       </form>
     </div>
   </div>

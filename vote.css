@@ -6,7 +6,7 @@
 main{
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 .container{
   width: 70%;
@@ -19,7 +19,6 @@ main{
   display: flex;
   justify-content: space-around;
   margin-top: 10%;
-  
 }
 #vote_text{
   border: 1px solid;
@@ -41,19 +40,46 @@ main{
 
 #participate{
   background-color: greenyellow;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 #absent{
   background-color: red;
-  font-size: 3rem;
-}
-
-.upload_vote_container{
-
+  font-size: 2rem;
 }
 
 #upload_vote, #delete_vote{
   background-color: 263343;
   border-radius: 10%;
   font-size: 1rem;
+}
+
+#upload_vote:hover, #delete_vote:hover{
+  background-color: blue;
+}
+
+.modal_vote{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hidden{
+  display: none;
+}
+
+
+@media screen and (max-width:48rem) {
+  .item{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 10px;
+  }
+  .main_vote{
+    flex-direction: column;
+  }
 }
