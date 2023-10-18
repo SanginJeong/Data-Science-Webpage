@@ -2,9 +2,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Science</title>
+  <title>Data Science - 참여투표</title>
   <script src="https://kit.fontawesome.com/3e7a68d981.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./vote.css">
 </head>
 <body>
   <nav class="navbar">
@@ -54,44 +55,53 @@
       <i class="fa-solid fa-bars"></i>
     </a>
   </nav>
-
   <main>
     <div class="container">
-      <div class="main_left">
-        <div class="item vote">
-          <a href="./vote.html">진행중인 투표</a>
+      <div class="main_header">
+        <div class="upload_vote_container">
+          <button id="upload_vote">투표 올리기</button>
+          <button id="delete_vote">삭제하기</button>
         </div>
+        <h1>진행중인 투표</h1>
       </div>
-
-      <div class="main_center">
-        <div class="item confirm"><a href="#">공지사항</a></div>
-        <div class="item free"><a href="#">자유게시판</a></div>
-        <div class="item schedule"><a href="#">학과일정</a></div>
-        <div class="item compliment"><a href="#">칭찬해요</a></div>  
-      </div>
-
-      <div class="main_right">
-        <div class="sideBar">
-          <div>
-            <a href="https://www.kmou.ac.kr/kmou/main.do" target="_blank">해양대<br/>홈페이지</a>
+      <div class="main_vote">
+        <div class="vote_subject item">
+          <h2>개강총회 참석여부</h2>
+          <div id="vote_text">
+            <h3 id="vote_title">3/2 개강총회 참석여부 조사</h3>
+            <h3 id="vote_location">장소 : </h3>
           </div>
-          <hr/>
           <div>
-            <a href="https://wtis.kmou.ac.kr/mi/install_setup/install.jsp" target="_blank">종합정보<br/>시스템</a>
+            <p id="show_sum">투표인원 : 0</p>
+            <p id="show_participate">참여 : 0</p>
+            <p id="show_absent">불참 : 0</p>
           </div>
-          <hr/>
           <div>
-            <a href="https://cts.kmou.ac.kr/" target="_blank">Ocean<br/>CTS</a>
-          </div>
-          <hr/>
-          <div>
-            <a href="https://cyberweb.kmou.ac.kr/index.jsp" target="_blank">KMOU<br/>LMS</a>
+            <button id="participate">참여</button>
+            <button id="absent">불참</button>
           </div>
         </div>
       </div>
     </div>
   </main>
-
+  <div class="sideBar">
+    <div>
+      <a href="https://www.kmou.ac.kr/kmou/main.do" target="_blank">해양대<br/>홈페이지</a>
+    </div>
+    <hr/>
+    <div>
+      <a href="https://wtis.kmou.ac.kr/mi/install_setup/install.jsp" target="_blank">종합정보<br/>시스템</a>
+    </div>
+    <hr/>
+    <div>
+      <a href="https://cts.kmou.ac.kr/" target="_blank">Ocean<br/>CTS</a>
+    </div>
+    <hr/>
+    <div>
+      <a href="https://cyberweb.kmou.ac.kr/index.jsp" target="_blank">KMOU<br/>LMS</a>
+    </div>
+  </div>
+  
   <footer>
     <div>주소 : (49112) 부산광역시 영도구 태종로 727(동삼동) 한국해양대학교 051-410-4370</div>
     <div>FrontEnd : 정상인</div>

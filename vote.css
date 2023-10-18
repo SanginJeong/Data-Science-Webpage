@@ -1,0 +1,59 @@
+/* 
+- 참여, 불참 누르면 카운트
+- 메인 페이지에 투표 글목록으로 띄우기
+*/
+
+main{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.container{
+  width: 70%;
+  display: block;
+}
+.main_header{
+  text-align: center;
+}
+.main_vote{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+  
+}
+#vote_text{
+  border: 1px solid;
+}
+.item{
+  width: 50%;
+  height: 50%;
+}
+.sideBar{
+  position: fixed;
+  top: 12rem;
+  right: 4rem;
+}
+.vote_subject{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#participate{
+  background-color: greenyellow;
+  font-size: 3rem;
+}
+#absent{
+  background-color: red;
+  font-size: 3rem;
+}
+
+.upload_vote_container{
+
+}
+
+#upload_vote, #delete_vote{
+  background-color: 263343;
+  border-radius: 10%;
+  font-size: 1rem;
+}
